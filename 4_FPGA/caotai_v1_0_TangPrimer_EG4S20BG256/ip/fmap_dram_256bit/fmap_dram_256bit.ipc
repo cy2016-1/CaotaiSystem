@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DRAMConfig>
+    <GeneralConfig>
+        <Type>EG_LOGIC_DRAM</Type>
+        <Device>EG4S20BG256</Device>
+        <create_VHDL>false</create_VHDL>
+        <inst>fmap_dram_256bit</inst>
+    </GeneralConfig>
+    <WriteMemorySize>
+        <depth_a>32</depth_a>
+        <width_a>256</width_a>
+    </WriteMemorySize>
+    <ReadMemorySize>
+        <depth_b>32</depth_b>
+        <width_b>256</width_b>
+    </ReadMemorySize>
+    <MemoryInitialization/>
+</DRAMConfig>

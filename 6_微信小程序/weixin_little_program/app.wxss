@@ -1,0 +1,70 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.item-left {
+   flex: 1;
+}
+
+.item-right {
+  flex: 0.1;
+}
+
+.flex_route {
+  display    : flex    ; /*水平布局*/
+  align-items: center  ; /*纵向居中*/
+}
+
+.flex_route_center {
+	display    : flex    ; /*水平布局*/
+	align-items: center  ; /*纵向居中*/
+	flex-direction: column;
+}
+
+textarea {
+	border: 5px solid #e0e;
+	margin: 5px;
+	padding: 5px;
+	border-radius:10px;
+	height: 400rpx;
+	width: 700rpx;
+}
+
+.devices_summary {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.device_list {
+  height: 320px;
+  margin: 50px 5px;
+  margin-top: 0;
+  border: 2px solid #f00;
+  border-radius: 5px;
+  width: auto;
+}
+
+.device_item {
+  display    : flex    ; /*水平布局*/
+  border: 1px solid #00F;
+  padding: 10px;
+  border-radius: 5px;
+  color: #111;
+}
+
+.background {
+  margin: 0px 0px;
+  margin-top: 0;
+  border-radius: 0px;
+  width: auto;
+  background-color: rgb(241, 241, 234);
+}
+
+

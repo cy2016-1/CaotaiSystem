@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2023-10-28 13:04:06</Project_Created_Time>
+    <TD_Version>4.6.18154</TD_Version>
+    <UCode>01011010</UCode>
+    <Name>caotai</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>../rtl/gcode_analysis.v</File>
+            <File>../rtl/spi_slave_mode0.v</File>
+            <File>../rtl/protocol_top.v</File>
+            <File>../ip/pll1/pll1.v</File>
+            <File>../rtl/caotai_top.v</File>
+            <File>../rtl/reset_sync.v</File>
+            <File>../ip/mult_16_16bit_signed/mult_16_16bit_signed.v</File>
+            <File>../ip/fmap_dram_256bit/fmap_dram_256bit.v</File>
+            <File>../ip/para_rom_512bit/para_rom_512bit.v</File>
+            <File>../rtl/nn_processor.v</File>
+            <File>../rtl/process_element.v</File>
+            <File>../ip/algorithm_cmd_fifo_72bit/algorithm_cmd_fifo_72bit.v</File>
+            <File>../ip/h2t_rom/h2t_rom.v</File>
+            <File>../rtl/algorithm_ctrl.v</File>
+            <File>../rtl/algorithm_top.v</File>
+            <File>../rtl/foot_ctrl_top.v</File>
+            <File>../ip/mult_16_9bit_signed/mult_16_9bit_signed.v</File>
+            <File>../ip/servo_cmd_fifo_64bit/servo_cmd_fifo_64bit.v</File>
+            <File>../ip/sin_rom_9bit/sin_rom_9bit.v</File>
+            <File>../rtl/async_pulse_counter.v</File>
+        </Verilog>
+        <ADC_FILE>../tdc/location.adc</ADC_FILE>
+        <SDC_FILE>../tdc/caotai.sdc</SDC_FILE>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>caotai_top</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Project_Settings>
+        <Step_Last_Change>2024-03-18 23:42:11</Step_Last_Change>
+        <Current_Step>60</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

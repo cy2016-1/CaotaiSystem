@@ -1,0 +1,180 @@
+set_pin_assignment	{ foot_backpress }	{ LOCATION = A4; }
+set_pin_assignment	{ foot_busystate }	{ LOCATION = N5; }
+set_pin_assignment	{ ila_keep1 }	{ LOCATION = E13; }
+set_pin_assignment	{ ila_keep2 }	{ LOCATION = A5; }
+set_pin_assignment	{ miso }	{ LOCATION = R16; }
+set_pin_assignment	{ mosi }	{ LOCATION = N12; PULLTYPE = PULLDOWN; }
+set_pin_assignment	{ sclk }	{ LOCATION = P12; PULLTYPE = PULLDOWN; }
+set_pin_assignment	{ scs0 }	{ LOCATION = M12; }
+set_pin_assignment	{ servo_1a }	{ LOCATION = B6; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_1b }	{ LOCATION = C5; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_1c }	{ LOCATION = C9; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_1d }	{ LOCATION = B10; }
+set_pin_assignment	{ servo_2a }	{ LOCATION = A14; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_2b }	{ LOCATION = B14; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_2c }	{ LOCATION = B15; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_2d }	{ LOCATION = B16; }
+set_pin_assignment	{ servo_3a }	{ LOCATION = C15; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_3b }	{ LOCATION = C16; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_3c }	{ LOCATION = E16; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_3d }	{ LOCATION = F16; }
+set_pin_assignment	{ servo_4a }	{ LOCATION = J13; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_4b }	{ LOCATION = H13; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_4c }	{ LOCATION = J11; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ servo_4d }	{ LOCATION = L12; }
+set_pin_assignment	{ soft_rstn }	{ LOCATION = A3; }
+set_pin_assignment	{ sys_clk }	{ LOCATION = K14; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

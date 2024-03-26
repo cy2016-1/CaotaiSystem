@@ -1,0 +1,51 @@
+<!--pages/message/message.wxml-->
+<view class="flex_route">
+  <view class='item-left'>
+    <text class="devices_summary">{{modeWriterSel ? "当前为绘图模式" : "当前为角度控制模式"}}</text>
+  </view>
+  <view class='item-right'>
+    <switch checked="{{modeWriterSel}}" bindchange="mode_change"/>
+  </view>
+</view>
+
+<view class="devices_summary">{{modeWriterSel ? "绘制线条，草太脚尖将跟随绘制" : "拖动摇杆，控制草太腿部的角度"}}</view>
+
+<view class='background' style="{{areaSize}}">
+  <canvas wx:if="{{modeWriterSel}}"
+    type="2d"
+    id="canvasWriter"
+    style="{{areaSize}}"
+    bindtouchstart="writerTouchStart"
+    bindtouchmove="writerTouchMove"
+    bindtouchend="writerTouchEnd"
+  ></canvas>
+  <canvas wx:if="{{!modeWriterSel}}"
+    type="2d"
+    id="canvasAngle"
+    style="{{areaSize}}"
+    bindtouchstart="angleTouchStart"
+    bindtouchmove="angleTouchMove"
+    bindtouchend="angleTouchEnd"
+  ></canvas>
+</view>
+
+<button wx:if="{{modeWriterSel}}" type="primary" bindtap="writerReset">复位绘图</button>
+<button wx:if="{{!modeWriterSel}}" type="primary" bindtap="angleReset">角度回正</button>
+
+<slider wx:if="{{modeWriterSel}}" block-color="#FF0000" value="{{hhhWriter}}" backgroundColor="#F0F000" bindchange="sliderChanging" data-type="writer" min="26" max="56" show-value/>
+<slider wx:if="{{!modeWriterSel}}" block-color="#FF0000" value="31" backgroundColor="#F0F000" bindchange="sliderChanging" data-type="angle" min="16" max="46" show-value/>
+
+<view class="flex_route_center"></view>
+<view>
+  <switch checked="{{switchA}}" bindchange="foot_switch_change" data-name="A"/>
+  <text>腿A</text>
+  <switch checked="{{switchB}}" bindchange="foot_switch_change" data-name="B"/>
+  <text>腿B</text>
+  <switch checked="{{switchC}}" bindchange="foot_switch_change" data-name="C"/>
+  <text>腿C</text>
+  <switch checked="{{switchD}}" bindchange="foot_switch_change" data-name="D"/>
+  <text>腿D</text>
+</view>
+
+
+

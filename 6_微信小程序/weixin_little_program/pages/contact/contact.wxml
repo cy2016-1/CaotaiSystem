@@ -1,0 +1,10 @@
+<image src="../../images/beauty.jpg" style="{{areaSize}}" mode="aspectFit"></image>
+<view class="devices_summary"></view>
+<view>B站ID：镇元上仙</view>
+<view>微信/QQ：1198373615</view>
+<view>Github：https://github.com/lu1198373615</view>
+<view>Gitee：https://gitee.com/lu1198373615</view>
+<view class="flex_route_center"></view>
+<view>开源地址（点击复制链接到浏览器打开）：</view>
+<text>https://gitee.com/lu1198373615/CaotaiSystem</text>
+<button type="primary" bindtap="copy1">复制链接</button>

@@ -1,0 +1,45 @@
+<!--pages/move/move.wxml-->
+<text>行走功能超参数</text>
+<textarea value="{{magicStr1}}" maxlength="100" style="height:40rpx;width:660rpx" bindinput="textareaInput" data-typeof="walk"/>
+<text>跳舞功能超参数</text>
+<textarea value="{{magicStr2}}" maxlength="100" style="height:40rpx;width:660rpx" bindinput="textareaInput" data-typeof="dance"/>
+<text>连续动作</text>
+<button type="primary" bindtap="beat1">33拍（前奏）</button>
+<button type="primary" bindtap="beat2">32拍（伸前腿）</button>
+<button type="primary" bindtap="beat3">31拍（多边形）</button>
+<button type="primary" bindtap="beat4">32拍（伸后腿）</button>
+<button type="primary" bindtap="beat5">33拍（旋转）</button>
+<button type="primary" bindtap="beat6">63拍（重复）</button>
+<button type="primary" bindtap="beat7">32拍（第二段）</button>
+<button type="primary" bindtap="beat8">抬腿卖萌</button>
+<button type="primary" bindtap="foot1">行走有抬腿</button>
+<button type="primary" bindtap="foot2">行走无抬腿</button>
+<button type="primary" bindtap="foot3">静止12秒</button>
+
+<view class="devices_summary"></view>
+
+<text>分解动作</text>
+<view>
+  <switch checked="{{switchA}}" bindchange="foot_switch_change" data-name="A"/>
+  <text>腿A</text>
+  <switch checked="{{switchB}}" bindchange="foot_switch_change" data-name="B"/>
+  <text>腿B</text>
+  <switch checked="{{switchC}}" bindchange="foot_switch_change" data-name="C"/>
+  <text>腿C</text>
+  <switch checked="{{switchD}}" bindchange="foot_switch_change" data-name="D"/>
+  <text>腿D</text>
+</view>
+<button type="primary" bindtap="dance1">dance1</button>
+<button type="primary" bindtap="dance2">dance2</button>
+<button type="primary" bindtap="action1">step1</button>
+<button type="primary" bindtap="action2">step2</button>
+<button type="primary" bindtap="action3">step3</button>
+<button type="primary" bindtap="action4">step4</button>
+<button type="primary" bindtap="action5">step5</button>
+<button type="primary" bindtap="action6">step6</button>
+<button type="primary" bindtap="action7">step7</button>
+<view class="devices_summary"></view>
+<view class="flex_route_center"></view>
+
+
+

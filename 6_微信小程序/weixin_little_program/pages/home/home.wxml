@@ -1,0 +1,49 @@
+<!--pages/home/home.wxml-->
+<view class="flex_route">
+  <view class='item-left'>
+    <text class="devices_summary">{{connected ? "下拉刷新会断开连接" : (hardware_state ? "下拉搜索周围设备呗" : "需要开启手机蓝牙先")}}</text>
+  </view>
+  <view class='item-right'>
+    <switch checked="{{ble_switch}}" bindchange="ble_switch_change"/>
+  </view>
+</view>
+
+<view wx:if="{{!connected}}" class="devices_summary">已发现 {{devices.length}} 个外围设备：</view>
+<scroll-view wx:if="{{!connected}}" class="device_list" scroll-y scroll-with-animation>
+  <view wx:for="{{devices}}" wx:key="index"
+   data-device-id="{{item.deviceId}}"
+   data-name="{{item.localName || item.name}}"
+   bindtap="tap_ble_item"
+   class="device_item">
+     <view class='item-left'>
+       <view style="font-size: 50rpx; color: #333;">{{item.name ? item.name : "未知设备"}}</view>
+       <view style="font-size: 25rpx">UUID: {{item.deviceId}}</view>
+       <view style="font-size: 25rpx">信号强度: {{item.RSSI}}dBm</view>
+     </view>
+     <view class='item-right'>
+       <canvas type="2d" id="X{{item.deviceId}}" style="height: 130rpx;width: 200rpx;"></canvas>
+     </view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{connected}}" class="devices_summary">
+  <view>已连接至蓝牙：{{name}}</view>
+  <view>该设备的广播内容是：{{chs[0]["value"]}}</view>
+  <view>运动控制器处于{{chs[0]["busy_state"] ? "忙" : "闲"}}状态</view>
+  <view>航向角：{{chs[0]["hangxiangjiao"]}}，俯仰角：{{chs[0]["fuyangjiao"]}}，横滚角：{{chs[0]["henggunjiao"]}}</view>
+</view>
+
+<view wx:if="{{connected}}" class="flex_route">
+  <view class="item-left devices_summary">HEX</view>
+  <switch class="item-left" checked="{{useHex}}" bindchange="changeChartype"/>
+  <view class="item-left"></view>
+  <view class="item-left"></view>
+  <button bindtap="tapSendButton" type="primary">发送</button>
+</view>
+
+<view wx:if="{{connected}}" class="flex_route_center">
+  <textarea value="{{textareaContent}}" bindinput="textareaInput" maxlength="-1" writing-mode="tb-rl" type="text"/>
+</view>
+
+<text wx:if="{{!connected}}">注意：部分设备需要开启微信位置权限才可以让小程序搜索到蓝牙设备\n</text>
+<text wx:if="{{!connected}}">草太椅子的蓝牙名称是UART_BLE</text>
