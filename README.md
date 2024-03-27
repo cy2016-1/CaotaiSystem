@@ -50,7 +50,7 @@
 1.  使用`VS code`作为开发环境，`Arduino`作为框架来开发esp32
 2.  在`PIO Home`新建工程，板卡选择`Espressif ESP32 Dev Module`，框架选择`Arduino`
 3.  在`PIO Home`搜索`mpu6050`，在搜索到的库中选择`I2Cdevlib-MPU6050 by Jeff Rowberg`，add to project
-4.  编译、下载即可
+4.  把`main.cpp`作为工程的主函数编译、下载即可
 
 ##### 6_微信小程序
 
