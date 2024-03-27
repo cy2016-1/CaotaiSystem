@@ -46,11 +46,12 @@
 
 ##### 5_esp32_Arduino
 
-这个文件夹里放了esp32的代码，主要完成2个功能：1.把从蓝牙收到的指令透传给FPGA；2.读取mpu6050的姿态。
-1.使用VS code作为开发环境，Arduino作为框架来开发esp32
-2.在PIO Home新建工程，板卡选择Espressif ESP32 Dev Module，框架选择Arduino
-3.在PIO Home搜索mpu6050，在搜索到的库中选择I2Cdevlib-MPU6050 by Jeff Rowberg，add to project
-4.编译、下载即可
+这个文件夹里放了esp32的代码，主要完成2个功能：a.把从蓝牙收到的指令透传给FPGA；b.读取`mpu6050`的姿态。
+1.  使用`VS code`作为开发环境，`Arduino`作为框架来开发esp32
+2.  在`PIO Home`新建工程，板卡选择`Espressif ESP32 Dev Module`，框架选择`Arduino`
+3.  在`PIO Home`搜索`mpu6050`，在搜索到的库中选择`I2Cdevlib-MPU6050 by Jeff Rowberg`，add to project
+4.  编译、下载即可
+
 ##### 6_微信小程序
 
 <img src='6_微信小程序/小程序码.jpg'/>
