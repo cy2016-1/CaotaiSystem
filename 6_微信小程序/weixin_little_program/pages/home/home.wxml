@@ -42,7 +42,7 @@
 </view>
 
 <view wx:if="{{connected}}" class="flex_route_center">
-  <textarea value="{{textareaContent}}" bindinput="textareaInput" maxlength="-1" writing-mode="tb-rl" type="text"/>
+  <textarea value="{{textareaContent}}" bindconfirm="textareaInput" maxlength="-1" writing-mode="tb-rl" type="text"/>
 </view>
 
 <text wx:if="{{!connected}}">注意：部分设备需要开启微信位置权限才可以让小程序搜索到蓝牙设备\n</text>
