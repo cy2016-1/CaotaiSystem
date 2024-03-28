@@ -90,8 +90,9 @@
 （1）结构方面，把电机改为步进电机，替换掉模拟舵机，模拟舵机的精度太差了     
 （2）算法方面，把4条腿联动起来进行运动解算，从而使动作更加自然     
 （3）算法方面，把mpu6050的姿态数据用于保持平衡，从而增加平衡性（目前已经可以把数据读出来并上传到小程序，但是没有进行处理）     
-（4）电路和FPGA方面，替换掉已经停产的[Tang Primer](https://wiki.sipeed.com/hardware/zh/tang/Tang-primer/index.html)，使用在产的其他FPGA核心板，比如载有高云FPGA的[Tang Primer 20K](https://wiki.sipeed.com/hardware/zh/tang/tang-primer-20k/primer-20k.html)     
-（5）其他我没有想到的方向...
+（4）电路和FPGA方面，替换掉已经停产的[Tang Primer](https://wiki.sipeed.com/hardware/zh/tang/Tang-primer/index.html)，使用在产的其他FPGA核心板，比如载有高云FPGA的[Tang Primer 20K](https://wiki.sipeed.com/hardware/zh/tang/tang-primer-20k/primer-20k.html)，注意核心板替换了以后PCB也要重新绘制哦     
+（5）校正流程方面，目前进行舵机层面的校正时，每次都要修改`caotai_top.v`再重新编译下载FPGA固件，这太麻烦了，所以可以通过增加通信协议指令来在线校正     
+（6）其他我没有想到的方向...
 3.  至少你得把`单轴往复装配体`复刻出来，它的直线运动很有趣，不信问问你的女朋友
 
 ##### 如果你不想复刻
