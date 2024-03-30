@@ -1,7 +1,8 @@
 # CaotaiSystem
 
 ### 介绍
-一只会走路、会跳舞、会写字的草太椅子
+一只会走路、会跳舞、会写字的草太椅子     
+[视频介绍求三连](https://www.bilibili.com/video/BV1Sm421n7bB/)     
 
 <img src='6_微信小程序/weixin_little_program/images/beauty.jpg'/>
 <img src='5_esp32_Arduino/system.jpg'/>
@@ -98,7 +99,7 @@
 ##### 如果你不想复刻
 
 1.  esp32和微信小程序采用蓝牙进行交互的部分，目前已经调试稳定，可以成为其他设计的参考
-2.  去B站对应视频下面给我点个一键三连吧
+2.  去B站对应[视频](https://www.bilibili.com/video/BV1Sm421n7bB/)下面给我点个一键三连吧
 
 ### 参考引用
 
