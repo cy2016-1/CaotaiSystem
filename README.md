@@ -43,7 +43,7 @@
 
 ##### 4_FPGA
 
-这个文件夹里放了FPGA的工程，使用安路FPGA`TD4.6.4`进行开发
+这个文件夹里放了FPGA的工程，使用安路FPGA开发工具[TD4.6.4](https://www.anlogic.com/support/tools-downloads)进行开发
 
 <img src='4_FPGA/fpga_system.jpg'/>
 
